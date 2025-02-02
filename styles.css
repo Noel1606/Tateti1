@@ -1,0 +1,88 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: #333;
+}
+
+.nivel {
+    margin-bottom: 10px;
+}
+
+/* Estilos del tablero */
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #000;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.celda:hover {
+    background-color: #f0f0f0;
+}
+
+#mensaje {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para la pantalla de registro */
+#registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+#registro h1 {
+    margin-bottom: 20px;
+}
+
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-registro input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#form-registro button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#lista-jugadores {
+    margin: 20px auto;
+}

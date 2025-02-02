@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta-Te-Ti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pantalla de Registro -->
+    <div id="registro">
+        <h1>Bienvenido al Ta-Te-Ti</h1>
+        <form id="form-registro">
+            <label for="nombreJugador">Tu Nombre:</label>
+            <input type="text" id="nombreJugador" placeholder="Escribe tu nombre">
+            <button type="submit">Jugar</button>
+        </form>
+    </div>
+
+    <!-- Lista de Jugadores Registrados -->
+    <div id="lista-jugadores" style="display: none;">
+        <h2>Jugadores Registrados:</h2>
+        <ul id="jugadores"></ul>
+    </div>
+
+    <!-- Pantalla del Juego -->
+    <div id="juego" style="display: none;">
+        <h1>Ta-Te-Ti</h1>
+        
+        <div class="nivel">
+            <label>Selecciona Nivel:</label>
+            <select id="nivel">
+                <option value="facil">Fácil</option>
+                <option value="medio">Medio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+        </div>
+
+        <div class="tablero">
+            <div class="celda" data-index="0"></div>
+            <div class="celda" data-index="1"></div>
+            <div class="celda" data-index="2"></div>
+            <div class="celda" data-index="3"></div>
+            <div class="celda" data-index="4"></div>
+            <div class="celda" data-index="5"></div>
+            <div class="celda" data-index="6"></div>
+            <div class="celda" data-index="7"></div>
+            <div class="celda" data-index="8"></div>
+        </div>
+
+        <p id="mensaje"></p>
+
+        <button id="reiniciar">Reiniciar Juego</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
